@@ -39,3 +39,9 @@ form{
 .flash{
   color: green
 }
+
+.field_with_errors{
+  padding: 2px;
+  background-color: red;
+  display: table;
+}

@@ -11,7 +11,7 @@ class BooksController < ApplicationController
        flash[:notice] = "Book was successfully created."
        redirect_to @book
     else
-      flash.now[:alert] = 'Do it again.'
+      flash.now[:alert] = "can't be blank"
       render :new
     end
   end
@@ -30,7 +30,7 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully updated."
       redirect_to book
     else
-      flash.now[:alert] = 'Do it again.'
+      flash.now[:alert] = "can't be blank"
       render("books")
     end
   end

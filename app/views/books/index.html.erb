@@ -25,5 +25,6 @@
   <%= f.text_field :title %>
   <p class="new-p">Body</p>
   <%= f.text_area :body %><br>
+  <%= render 'books/error_messages', model: f.object %>
   <%= f.submit 'Create Book' %>
 <% end %>
